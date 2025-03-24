@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
-import Feature from './pages/featurePage.jsx'
+import FeaturePage from './pages/featurePage'
+import ContactPage from './pages/contactPage'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/feature/:id',
-    element: <Feature />
+    element: <FeaturePage />
+  },
+  {
+    path: '/contact',
+    element: <ContactPage />
   }
 ])
 

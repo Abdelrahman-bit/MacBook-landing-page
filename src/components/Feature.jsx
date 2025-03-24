@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-function Card(props) {
+function Feature (props) {
   const {icon, title, content, id} = props;
   return (
 		<div className='bg-[#252429] flex flex-col items-center content-center w-3/4 lg:w-3/10 gap-4 p-8 rounded-3xl mt-9 '>
@@ -19,4 +19,4 @@ function Card(props) {
   );
 }
 
-export default Card
+export default Feature
