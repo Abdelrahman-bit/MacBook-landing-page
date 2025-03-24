@@ -13,8 +13,8 @@ const routes = createBrowserRouter([
     {
         path: "/feature/:id",
         element: <FeaturePage />,
-        loader: async({params}) =>{ 
-            const feature = await data.features.find((elem) => elem.id === params.id);
+        loader: ({params}) =>{ 
+            const feature = data.features.find((elem) => elem.id === params.id);
             const { title, content, pageImage } = feature;
             const post = {
                 title,

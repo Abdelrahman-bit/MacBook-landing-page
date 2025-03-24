@@ -5,6 +5,11 @@ import battery from "./assets/png/charging.png";
 import performancPage from "./assets/performance.jpg";
 import aiPage from "./assets/ai.jpg";
 import battryPage from "./assets/battery.jpg";
+// users images
+import emilyImage from './assets/users/emily-img.jpg'
+import lauraImage from './assets/users/laura-img.jpg'
+import emilaImage from './assets/users/emila-img.jpg'
+import johnsonImage from './assets/users/johnson-img.jpg'
 
 const data = {
 	features: [
@@ -33,7 +38,48 @@ const data = {
 			pageImage: battryPage,
 		},
 	],
-	users: [],
+	users: [
+		{
+			id: 1,
+			img: emilyImage,
+			rate: 4,
+			content:
+				"I recently purchased a laptop from macbook air and I am thoroughly impressed with its performance and sleek design. Not only is it reliable and modern, but the battery life is exceptional. The M4 technology offers a great user experience at a good price, making it worth every penny. A great package overall.",
+			name: "Emily Thompson",
+		},
+		{
+			id: 2,
+			img: johnsonImage,
+			rate: 5,
+			content: `As a loyal customer of macbook air, I can confidently say their laptops are top-notch in performance and design.
+                     The M4 processor provides reliable and modern functionality,
+                     while the lightweight design and long battery life make it a perfect companion for on-the-go productivity.
+                     With a great price point,
+                     it's definitely worth the money for the value-packed package you receive.`,
+			name: "Johnson smith",
+		},
+		{
+			id: 3,
+			img: lauraImage,
+			rate: 5,
+			content: `I am beyond impressed with the performance of the Macbook Air.
+             Its reliable M4 processor and long battery life make it a modern choice for those on the go.
+             The lightweight design and exceptional performance truly make it worth the money.
+             Macbook Air is a great package at a good price.`,
+			name: "Laura Harrison",
+		},
+		{
+			id: 4,
+			img: emilaImage,
+			rate: 5,
+			content: `I am extremely satisfied with my new Macbook Air.
+             Its reliable performance, modern design,
+             and long battery life make it a great package. The M4 processor ensures speedy operations,
+             while its lightweight design is perfect for on-the-go use.
+             Definitely worth every penny spent. `,
+			name: "Emily Wilson",
+		},
+	],
 };
 
 export default data;

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-function Button() {
+function Button(props) {
 	return (
-		<button className='cursor-pointer p-2 rounded-xl bg-gradient-to-br from-cyan-100 to-zinc-500 '>
-			<Link to='/contact'>Contact ust</Link>
+		<button className ={ ` cursor-pointer p-2 rounded-xl bg-gradient-to-br from-cyan-100 to-zinc-500 ${props.className} `}>
+			<Link to='/contact'> {props.value? props.value : 'Contact us'} </Link>
 		</button>
 	);
 }
