@@ -1,12 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Header from "../components/Header";
-import data from "../data";
 
 function FeaturePage() {
-	const params = useParams();
-	const feature = data.features.find((elem) => elem.id === params.id);
-	const { title, content, pageImage } = feature;
-	console.log(feature);
+	const {title, content, pageImage} = useLoaderData();
 
 	return (
 		<>
