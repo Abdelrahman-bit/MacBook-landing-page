@@ -40,7 +40,8 @@ macbook-landing-page/
 │── vite.config.js        # Vite configuration
 │── README.md             # Project documentation
 ```
-
+## You can see a live demo in like blow:
+[**LandingPage**](https://abdelrahman-bit.github.io/MacBook-landing-page#features)
 
 ## 📧 Contact
 
