@@ -10,25 +10,26 @@ const routes = createBrowserRouter([
 		path: "/",
 		element: <App />,
 	},
-    {
-        path: "/feature/:id",
-        element: <FeaturePage />,
-        loader: ({params}) =>{ 
-            const feature = data.features.find((elem) => elem.id === params.id);
-            const { title, content, pageImage } = feature;
-            const post = {
-                title,
-                content,
-                pageImage
-            }
-            console.log(post);
-            return post
-        }
-    },
-    {
-        path: "/contact",
-        element: <ContactPage />,
-    },
+	{
+		path: "/feature/:id",
+		element: <FeaturePage />,
+		loader: ({ params }) => {
+			const feature = data.features.find((elem) => elem.id === params.id);
+			const { title, content, pageImage } = feature;
+			const post = {
+				title,
+				content,
+				pageImage,
+			};
+			console.log(post);
+			return post;
+		},
+	},
+	{
+		path: "/contact",
+		element: <ContactPage />,
+	},
+	{ basename: "/MacBook-landing-page" },
 ]);
 
 const Router = ()=>{
