@@ -14,7 +14,7 @@ const Header = (props) => {
 			<div className='flex justify-between gap-3 lg:gap-9 items-center sm:gap-10'>
 				{props.isFeaturePage || (
 					<Link
-						className='cursor-pointer text-sm font-semibold  text-gray-200'
+						className='cursor-pointer text-sm md:text-lg font-semibold  text-gray-200'
 						to={pathname === "/" ? "#features" : "/#features"}
 						onClick={(e) => {
 							if (pathname === "/") {
