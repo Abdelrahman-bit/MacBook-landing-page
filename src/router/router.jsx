@@ -4,6 +4,7 @@ import FeaturePage from "../pages/featurePage";
 import ContactPage from "../pages/contactPage";
 import data from "../data";
 
+
 const routes = createBrowserRouter(
 	[
 		{
@@ -33,8 +34,8 @@ const routes = createBrowserRouter(
 	{ basename: "/MacBook-landing-page" }
 );
 
-const Router = () => {
-	return <RouterProvider router={routes} />;
-};
+const Router = ()=>{
+   return <RouterProvider router={routes} />
+}
 
 export default Router;

@@ -6,15 +6,15 @@ const Header = (props) => {
   return (
 		<header className='py-3 px-5 top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2  my-5 w-9/10 rounded-2xl bg-[#e4e4e422] flex justify-between items-center backdrop-blur-xl fixed z-11 drop-shadow-sm sm:w-9/10'>
 			<div>
-				<Link to='/' className='cursor-pointer text-gray-200 text-2xl font-medium'>
+				<Link to='/' className='cursor-pointer text-gray-200 md:text-2xl font-bold'>
 					{" "}
 					Macbook Air{" "}
 				</Link>
 			</div>
-			<div className='flex justify-between gap-9 items-center sm:gap-10'>
+			<div className='flex justify-between gap-3 lg:gap-9 items-center sm:gap-10'>
 				{props.isFeaturePage || (
 					<Link
-						className='cursor-pointer font-semibold  text-gray-200'
+						className='cursor-pointer text-sm font-semibold  text-gray-200'
 						to={pathname === "/" ? "#features" : "/#features"}
 						onClick={(e) => {
 							if (pathname === "/") {
@@ -29,7 +29,7 @@ const Header = (props) => {
 						Featuers
 					</Link>
 				)}
-				{props.isContactPage || <Button />}
+				{props.isContactPage || <Button className='p-0 text-[10px]'/>}
 			</div>
 		</header>
   );

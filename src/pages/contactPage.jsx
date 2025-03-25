@@ -10,7 +10,7 @@ function ContactPage() {
 			<Header isContactPage={true} />
 			<div className='pt-25 pb-10 px-15 bg-[#0e0e0e] text-gray-100 flex flex-col lg:flex-row justify-between'>
 				<div className='flex flex-col gap-5'>
-					<h1 className='text-7xl'> Have a questioin? </h1>
+					<h1 className='text-5xl md:text-6xl lg:text-7xl'> Have a questioin? </h1>
 					<p className='max-w-md leading-8'>
 						We'e here to help! Fill out the form or reach us via emial or phone. Our Customer care Team is available
 						to help you get the best experience out of MacBook Air Whether you have an issu about your order or
@@ -24,7 +24,7 @@ function ContactPage() {
 				<div className=' lg:w-5/10'>
 					<form
 						action=''
-						className='flex flex-col gap-8 [&_input]:border-1 [&_input]:border-gray-200 [&_input]:p-3 p-5 '
+						className='flex flex-col gap-8 [&_input]:border-1 [&_input]:border-gray-200 [&_input]:p-3 pt-5 '
 					>
 						<div className='flex gap-3 flex-wrap'>
 							<input className='flex-1' type='text' name='first-name' placeholder='*First Name' />

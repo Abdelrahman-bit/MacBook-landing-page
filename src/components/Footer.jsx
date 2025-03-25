@@ -3,9 +3,9 @@ import Button from './Button';
 
 function Footer() {
   return (
-		<footer className='bg-[#0f1012] flex flex-col md:flex-row gap-10 md:gap-3 p-25 md:px-10 w-full justify-around items-center md:items-start  '>
-			<div className='flex flex-col gap-3 justify-center items-start [&_button]:w-5/10 [&_button]:text-white '>
-				<h1 className='md:text-4xl/15 text-2xl text-gray-100 font-mono max-w-sm md:max-w-md '> Connecting You to the Future </h1>
+		<footer className='bg-[#0f1012] flex flex-col md:flex-row gap-10 p-10 md:gap-3 lg:p-25 md:px-10 w-full justify-around items-center md:items-start  '>
+			<div className='flex flex-col  gap-3 [&_button]:w-7/10 [&_button]:text-white '>
+				<h1 className='md:text-4xl/15 text-2xl text-gray-100 font-mono  md:max-w-md '> Connecting You to the Future </h1>
 				<p className='text-gray-300 py-3'>Explore the Possibilities</p>
 				<Button className='w-2xl'/>
 			</div>
