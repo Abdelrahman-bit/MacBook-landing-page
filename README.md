@@ -2,6 +2,9 @@
 
 A sleek and responsive marketing landing page for **MacBook Air**, built using modern web technologies to provide a seamless user experience.
 
+## You can see a live demo in like blow:
+[**Live demo**](https://abdelrahman-bit.github.io/MacBook-landing-page#features)
+
 ## 🚀 Features
 
 - Fully **responsive** design for all devices
@@ -40,8 +43,7 @@ macbook-landing-page/
 │── vite.config.js        # Vite configuration
 │── README.md             # Project documentation
 ```
-## You can see a live demo in like blow:
-[**LandingPage**](https://abdelrahman-bit.github.io/MacBook-landing-page#features)
+
 
 ## 📧 Contact
 
